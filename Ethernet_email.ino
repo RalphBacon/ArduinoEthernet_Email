@@ -163,7 +163,7 @@ void displayResponse() {
 		char thisByte = client.read();
 		Serial.write(thisByte);
 	}
-}
+}  
 
 // -----------------------------------------------------------------------------
 // SETUP      SETUP      SETUP      SETUP      SETUP      SETUP      SETUP

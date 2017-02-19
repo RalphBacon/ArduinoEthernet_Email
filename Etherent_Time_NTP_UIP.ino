@@ -191,4 +191,3 @@ void sendNTPpacket(char* address) {
 	// All done, the underlying buffer is now updated
 	Udp.endPacket();
 }
-

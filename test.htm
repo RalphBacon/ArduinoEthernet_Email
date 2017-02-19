@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ENC28J60 Testing</title>
+	<meta http-equiv="refresh" content="60">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style> 
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+			font-family:arial;
+		}
+			
+		/* For every browser */
+		.container {
+			width: 100%;
+			height: 100vh;
+			background-color: yellow;
+			font-size:1em;		
+		}
+		
+		table td {
+			font-size:1em;
+			text-align:right;
+			padding: 5px;
+		}
+					
+		/* Mobile phone CSS */
+		@media only screen and (orientation:portrait) {
+		
+		.container {
+			width: 360px;
+			height: 100vh;
+			font-size:1em;		
+		}
+		
+		.banner {
+			color:yellow;
+			padding-top:15px;
+			font-size: 1.6em;
+		}
+		
+		table td {
+			font-size:1.2em;
+			text-align:right;
+			padding: 5px;
+			background-color:whitesmoke;
+		}
+		
+		td>input {
+			text-align: center;
+		}
+		
+		input[type=button] {
+			font-size:1.1em;
+			padding: 2px;
+		}		
+		
+		/* End of phone media*/
+		}
+		
+	</style>
+	
+	<link rel='icon' href='data:,'>
+</head>
+<body>
+	<div class="container">
+		<div style='width:100%;height:60px;background-color:red;text-align:center;'>
+			<h1 class="banner">Arduinite Ethernet Special</h1>
+		</div>
+		<table style='border:1px solid blue;margin-left:auto;margin-right:auto;margin-top:30px;'>
+			<tr>
+				<td>Air temperature:</td>
+				<td>!AirTemp</td>
+			</tr>
+			<tr>
+				<td>Water temperature:</td>
+				<td>!WaterTemp</td>
+			</tr>
+			<tr>
+				<td>Min Water:</td>
+				<td>!MinTemp</td>
+			</tr>
+			<tr>
+				<td>Max Water:</td>
+				<td>!MaxTemp</td>
+			</tr>
+			<tr>
+				<td>Water level:</td>
+				<td>OK</td>
+			</tr>
+			<tr>
+				<td>Clear min/max levels</td>
+				<td><input type="button" onclick="location.href='/?clear'" value="Clear"></td>
+			</tr>
+			</tr>	
+			<tr>
+				<td>Refresh levels</td>
+				<td>
+					<input type='button' onclick="location.href='/'" value='Refresh'>
+				</td>
+			</tr>
+		</table>
+		<div style="text-align:center;margin-top:10px;">
+			<h4>This web page delivered from SD card</h4>
+		</div>
+		<div style="margin-top:25px;font-size:0.8em;color:green; padding:5px;">
+			<ol style="padding:20px;">
+				<li>A very long line to deterine whether we have read problems using Sd.read with lines that span many characters. We shall see!</li>
+				<li>A very long line to deterine whether we have read problems using Sd.read with lines that span many characters. We shall see!</li>
+				<li>A very long line to deterine whether we have read problems using Sd.read with lines that span many characters. We shall see!</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>

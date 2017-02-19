@@ -1,6 +1,8 @@
 /* Demo sketch for a simple web page that can monitor (in this case) water
  * temperature and water levels but could be used for any monitoring purpose.
  *
+ * This version updated to read data from an SD card.
+ *
  * Space is at a premium on an Arduino UNO or Nano so we've stored the actual
  * web page HTML in program memory - otherwise the run-time SRAM would be
  * immediately filled with the large strings of HTML data.
